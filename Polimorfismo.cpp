@@ -3,19 +3,19 @@ using namespace std;
 class Animal{
     public:
     virtual void sonido(){
-        cout<< "El animal hace un sonido"<< end;
+       cout<<"El animal hace un sonido"<< endl;
     }
 };
 
 class Perro : public Animal {
     public:
-    void sonido() overdrive{
+    void sonido() override{
         cout<<"El perro ladra: guau guau"<<endl;
     }
 };
 class Gato : public Animal {
     public:
-    void sonido() overdrive{
+    void sonido() override{
         cout<<"El gato maulla: miau miau"<<endl;
     }
 };
